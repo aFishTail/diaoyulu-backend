@@ -29,7 +29,6 @@ public class MallSecurityConfig {
     private UmsAdminService adminService;
     @Autowired
     private UmsResourceService resourceService;
-
     @Bean
     public UserDetailsService userDetailsService() {
         //获取登录用户信息
@@ -49,5 +48,5 @@ public class MallSecurityConfig {
                 return map;
             }
         };
-    }
+    }   
 }
